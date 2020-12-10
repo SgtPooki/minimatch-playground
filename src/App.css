@@ -1,87 +1,120 @@
 @import url('https://fonts.googleapis.com/css?family=Poor+Story|Roboto+Mono');
 
 .App {
-  text-align: center;
-  font-family: 'Roboto Mono', sans-serif;
-  color: #313638;
+    text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+    color: #313638;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  background-color: #EF6461;
-  padding: 20px;
-  color: white;
+    background-color: #ef6461;
+    padding: 20px;
+    color: white;
 }
 
 .App-title {
-  font-family: 'Poor Story', sans-serif;
-  font-size: 5.5em;
-  margin: 20px;
-  color: #fff;
+    font-family: 'Poor Story', sans-serif;
+    font-size: 5.5em;
+    margin: 20px;
+    color: #fff;
 }
 
 .App-title-mini {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .App-field {
-  width: 70%;
-  max-width: 800px;
-  margin: 30px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.App-field.row {
+    flex-direction: row;
+}
+.App-field.col {
+    flex-direction: column;
+}
+
+.App-field.half {
+    flex-wrap: wrap;
 }
 
 .App-field > label {
-  color: #EF6461;
+    color: #ef6461;
 }
 
 .App-field > label > small {
-  font-size: 0.6em;
-  color: #313638;
+    font-size: 0.6em;
+    color: #313638;
 }
 
 .App-field > input,
+.App-field > textarea,
 .App-field > .App-editable {
-  border: 1px solid #313638;
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-  font-size: 15px;
-  background: #E0DFD5;
-  font-family: 'Roboto Mono', sans-serif;
-  text-align: left;
-  color: #313638;
-  outline: none;
+    border: 1px solid #313638;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    background: #e0dfd5;
+    font-family: 'Roboto Mono', sans-serif;
+    text-align: left;
+    color: #313638;
+    outline: none;
+}
+
+.App-field > textarea,
+.App-field > .App-editable {
+    min-height: 300px;
+    max-height: 300px;
+    width: 50%;
+    margin: 0 0 0 0;
+    overflow-y: auto;
+    flex-grow: 1;
 }
 
 .App-field > .App-editable {
-  min-height: 200px;
-  max-height: 350px;
-  overflow-y: auto;
+    max-height: 1200px;
+    min-height: 400px;
 }
 
+.App-field.half + .App-field.half {
+    padding: 0 0 0 1rem;
+}
+
+.App-field > textarea:focus,
 .App-field > input:focus,
 .App-field > .App-editable:focus {
-  border-color: #EF6461;
+    border-color: #ef6461;
 }
 
-.App-field > .App-editable .App-editable-match {
-  color: #EF6461;
+.green-highlight {
+    text-shadow: 3px 0px 3px green, -3px 0px 3px green, 6px 0px 6px green, -6px 0px 6px green;
+}
+
+.red-highlight {
+    text-shadow: 3px 0px 3px red, -3px 0px 3px red, 6px 0px 6px red, -6px 0px 6px red;
+}
+
+.yellow-highlight {
+    text-shadow: -3px 0px 3px yellow, 3px 0px 3px yellow, 6px 0px 6px yellow, -6px 0px 6px yellow;
 }
 
 footer .App-credits p {
-  color: #313638;
-  font-size: 0.75em;
-  margin: 5px;
+    color: #313638;
+    font-size: 0.75em;
+    margin: 5px;
 }
 
 footer .App-credits a {
-  color: #E0DFD5;
+    color: #e0dfd5;
 }
