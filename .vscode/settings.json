@@ -1,0 +1,17 @@
+{
+  // Editor settings
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+
+  // Javascript settings
+  "javascript.preferences.quoteStyle": "single",
+
+  // Prettier settings
+  "prettier.configPath": ".prettierrc",
+  "prettier.documentSelectors": ["*.js", "*.css", "*.html", "*.json"],
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.useEditorConfig": false
+}
